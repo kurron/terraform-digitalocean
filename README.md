@@ -27,6 +27,9 @@ from the internet.
 Note the public ip address of the new droplet and then run `./ssh-into-instance.sh` giving it the ip address 
 as an argument.  If everything is correct, you should be ssh'ed into your newly created box.
 
+##Obtaining The Current State
+Run `./inspect.sh` to see the current state of the droplet, including its ip address.
+ 
 ##Start Over
 If there is an error with configuration that prevents Terraform from completing its mission, run `./destroy.sh` to remove any assets that 
 have been created.  You don't want to get charged for assets that you are not going to use!
